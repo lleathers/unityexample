@@ -12,10 +12,10 @@ public class ExampleScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (Input.GetKeyDown (KeyCode.R)) {
-			gameObject.GetComponent<Renderer>().material.color = Color.red;
+			gameObject.GetComponent<Renderer>().material.color = Color.black;
 		}
 		if (Input.GetKeyDown (KeyCode.G)) {
-			gameObject.GetComponent<Renderer>().material.color = Color.green;
+			gameObject.GetComponent<Renderer>().material.color = Color.red;
 		}
 		if (Input.GetKeyDown (KeyCode.B)) {
 			gameObject.GetComponent<Renderer>().material.color = Color.blue;
