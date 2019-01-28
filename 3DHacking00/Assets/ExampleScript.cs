@@ -9,8 +9,14 @@ public class ExampleScript : MonoBehaviour {
 		
 	}
 	
+	float x;
+
 	// Update is called once per frame
 	void Update () {
+	    
+	    x += Mathf.Repeat(Time.deltaTime * 10, 360);
+	    gameObject.GetComponent<Transform>().rotation = Quaternion.Euler(0,x,x);
+
 		if (Input.GetKeyDown (KeyCode.R)) {
 			gameObject.GetComponent<Renderer>().material.color = Color.red;
 		}
